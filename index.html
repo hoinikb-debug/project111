@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTOAPP</title>
+    <!-- Підключення шрифту Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+    <span class="gear-icon">&#9881;</span> PHOTOAPP
+</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="photoapp.html">PHOTOAPP</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="download.html">DOWNLOAD</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Перший екран -->
+        <section class="hero-section">
+            <div class="container hero-container">
+                <h1>Where Victorian classics meet digital art.</h1>
+                <div class="image-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKanjtQ_JJfz9htqzHOPk66XBN5XX_6o34mwPL7seryIVixP7NJqDvWZ8&s=10" alt="Красивий пейзаж" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Другий екран (Особливості) -->
+        <section class="features-section">
+    <!-- Фонове стімпанк-відео -->
+    <div class="video-bg-container">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-spinning-gears-of-a-clock-41604-large.large.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <div class="container features-container">
+        <!-- Ваш контент тут -->
+        <h2>Features of our app</h2>
+        <p>Here you can place additional text, description of features, gallery of works or user reviews</p>
+        
+        <div class="features-grid">
+            <div class="feature-box">
+                <h3>Speed</h3>
+                <p>Instant processing of your photos without delays.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Quality</h3>
+                <p>Preservation of original detail and colors.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Usability</h3>
+                <p>Intuitive design for everyone.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Третій екран: Карусель фотографій -->
+        <section class="carousel-section">
+            <div class="container carousel-container">
+                <h2>PhotoApp Work Gallery</h2>
+                <div class="carousel">
+                    <button class="carousel-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+                    
+                    <div class="carousel-track-container">
+                        <div class="carousel-track">
+                            <div class="carousel-slide current-slide">
+                                <img src="https://images2.alphacoders.com/884/884331.jpg" alt="Фото 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://wallpapers.com/images/hd/steampunk-sci-fi-airship-65ziobpb65ds2emc.jpg" alt="Фото 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.hdqwalls.com/wallpapers/steampunk-male-4k-cx.jpg" alt="Фото 3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container footer-container">
+        
+        <!-- Заголовок та опис вирівняні по центру -->
+        <div class="footer-top-content">
+            <h3>Find Us & Contact Us</h3>
+            <p class="footer-desc">
+                Our main mechanical laboratory and headquarters are located in the heart of the steam district. 
+                Visit us to experience our workshop, inspect our optical lenses, and talk with our engineers.
+            </p>
+        </div>
+
+        <!-- ТРИ КОЛОНКИ -->
+        <div class="footer-columns-3">
+            
+            <!-- 1. ЛІВА КОЛОНКА: Контакти -->
+            <div class="footer-col">
+                <div class="footer-block">
+                    <h4>Contacts</h4>
+                    <p>✉️ <strong>Email:</strong> support@photoapp.com</p>
+                    <p>📞 <strong>Phone:</strong> +38 (068) 398-56-12</p>
+                </div>
+            </div>
+
+            <!-- 2. ЦЕНТРАЛЬНА КОЛОНКА: Адреса -->
+            <div class="footer-col">
+                <div class="footer-block">
+                    <h4>Address</h4>
+                    <p>📍 22 Steam-Pipe Avenue, Clockwork City, Victorian District.</p>
+                </div>
+            </div>
+
+            <!-- 3. ПРАVA КОЛОНКА: Карта в такому ж блоці -->
+            <div class="footer-col">
+                <div class="footer-block map-wrapper-block">
+                    <h4>Map</h4>
+                    <div class="footer-map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.5!2d30.5216!3d50.4501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI3JzAwLjQiTiAzMMKwMzEnMTcuOCJF!5e0!3m2!1suk!2sua!4f13.1" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!-- Копірайт -->
+    <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 PHOTOAPP. All rights reserved.</p>
+    </div>
+</footer>
+    <!-- Скрипт для каруселі -->
+    <!-- Скрипти каруселі та кнопки "Наверх" -->
+    <script>
+        // 1. Логіка каруселі
+        let currentSlideIndex = 0;
+
+        function moveSlide(direction) {
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(track.children);
+            
+            currentSlideIndex += direction;
+            
+            if (currentSlideIndex >= slides.length) {
+                currentSlideIndex = 0;
+            } else if (currentSlideIndex < 0) {
+                currentSlideIndex = slides.length - 1;
+            }
+            
+            track.style.transform = 'translateX(-' + (currentSlideIndex * 100) + '%)';
+        }
+
+        // 2. Логіка кнопки "Повернення вгору"
+        window.onscroll = function() {
+            let btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <!-- Кнопка повернення вгору -->
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Наверх">&#8593;</button>
+
+</body>
+</html>

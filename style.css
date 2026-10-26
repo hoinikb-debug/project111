@@ -1,0 +1,1117 @@
+/* ==========================================
+   STEAMPUNK THEME STYLES
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif; /* Класичний витончений шрифт для тексту */
+}
+
+body {
+    color: #d4b58b; /* Теплий кремово-латунний колір тексту */
+    background-color: #120d08; /* Темне тло старовинної шкіри/дерева */
+    background-image: radial-gradient(circle, #221810 0%, #0c0805 100%); /* Текстурний ефект глибини */
+}
+
+/* Універсальний контейнер */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 1. Шапка сайту (Стилізована під темну латунь та заклепки) */
+.site-header {
+    background-color: #1a120b;
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #8c5825; /* Мідно-латунна межа */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #e6c594; /* Латунний відтінок */
+    text-decoration: none;
+    font-family: 'Cinzel', serif; /* Готично-вікторіанський шрифт */
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.site-header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.site-header nav ul li a {
+    color: #c29b61;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Cinzel', serif;
+    transition: color 0.3s, text-shadow 0.3s;
+    letter-spacing: 1px;
+}
+
+.site-header nav ul li a:hover {
+    color: #ffcc66;
+    text-shadow: 0 0 8px #ff9900; /* Світіння латуні при наведенні */
+}
+
+/* 2. Універсальний блок для внутрішніх сторінок (Стиль старого кабінету/механізмів) */
+.site-main {
+    background-color: #1c140d;
+    background-image: linear-gradient(135deg, #241a11 0%, #140e09 100%);
+    padding: 100px 0;
+    min-height: calc(100vh - 180px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #4a2f13;
+    border-bottom: 1px solid #4a2f13;
+}
+
+.site-main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.site-main h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 38px;
+    color: #e6c594;
+    text-shadow: 3px 3px 6px #000;
+    border-bottom: 2px solid #8c5825;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.site-main p {
+    font-size: 18px;
+    max-width: 800px;
+    line-height: 1.8;
+    color: #d4b58b;
+    text-align: center;
+}
+
+/* 3. Головна сторінка: Секція Hero (Мідні рамки фото) */
+.hero-section {
+    background-color: #18110b;
+    padding: 70px 0;
+    border-bottom: 2px solid #59391a;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.hero-container h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 34px;
+    color: #e6c594;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/* Ефект старовинної важкої рамки картини */
+.image-wrapper img {
+    max-width: 100%;
+    width: 750px;
+    height: auto;
+    border: 8px solid #59391a; /* Мідна рама */
+    outline: 2px solid #8c5825; /* Подвійний ефект окантовки */
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9), inset 0 0 15px rgba(0,0,0,0.8);
+}
+
+/* 4. Друга секція: Особливості (Шкіряно-механічні картки) */
+.features-section {
+    background-color: #140e09;
+    padding: 80px 0;
+    border-bottom: 2px solid #59391a;
+}
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.features-container h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    color: #e6c594;
+}
+
+.features-container > p {
+    font-size: 18px;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #c29b61;
+}
+
+.features-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.feature-box {
+    background-color: #1c140d;
+    border: 2px solid #6b441e; /* Рамка картки під латунь */
+    padding: 30px;
+    border-radius: 6px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    background-image: linear-gradient(to bottom, #241a11, #140e09);
+}
+
+.feature-box h3 {
+    margin-bottom: 15px;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    color: #f0d19e;
+}
+
+.feature-box p {
+    font-size: 15px;
+    color: #b59263;
+    line-height: 1.5;
+}
+
+/* 5. Третя секція: Карусель фотографій у стилі steampunk */
+.carousel-section {
+    background-color: #0f0a06;
+    padding: 80px 0;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.carousel-container h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    color: #e6c594;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 6px solid #59391a; /* Специфічна важка мідна рамка галереї */
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+}
+
+.carousel-track-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Механічні кнопки гортання каруселі */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3b2512;
+    color: #e6c594;
+    border: 2px solid #8c5825;
+    font-size: 24px;
+    padding: 12px 18px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: #6b441e;
+    color: #fff;
+    box-shadow: 0 0 10px #ff9900;
+}
+
+.prev-btn {
+    left: 15px;
+}
+
+.next-btn {
+    right: 15px;
+}
+
+/* 6. Стилізовані кнопки інтерактивних сторінок (Встановити, Повернутися тощо) */
+a[href="success.html"], a[href="index.html"] {
+    display: inline-block;
+    background-color: #3b2512 !important;
+    color: #e6c594 !important;
+    border: 2px solid #8c5825 !important;
+    padding: 12px 25px;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none !important;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+
+a[href="success.html"]:hover, a[href="index.html"]:hover {
+    background-color: #6b441e !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 12px #ff9900;
+}
+
+/* 7. Підвал сайту (Старовинний залізнично-механічний стиль) */
+.site-footer {
+    background-color: #0c0805;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 3px solid #4a2f13;
+}
+
+.site-footer p {
+    font-size: 14px;
+    color: #8c6d46;
+    letter-spacing: 1px;
+}/* 1. Шапка сайту */
+.site-header {
+    background-color: #1a120b;
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #8c5825;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Логотип у шапці (текст без рамки) */
+.logo a {
+    color: #e6c594 !important;
+    text-decoration: none !important;
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.site-header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+/* Усі пункти меню в шапці (включно з HOME) — звичайний текст */
+.site-header nav ul li a {
+    color: #c29b61 !important;
+    text-decoration: none !important;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Cinzel', serif;
+    transition: color 0.3s, text-shadow 0.3s;
+    letter-spacing: 1px;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.site-header nav ul li a:hover {
+    color: #ffcc66 !important;
+    text-shadow: 0 0 8px #ff9900;
+}
+
+/* Кнопка "Встановити додаток" (окрема кнопка-дія всередині сторінок, НЕ в шапці) */
+.site-main a[href="success.html"] {
+    display: inline-block;
+    background-color: #3b2512;
+    color: #e6c594;
+    border: 2px solid #8c5825;
+    padding: 12px 25px;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+
+.site-main a[href="success.html"]:hover {
+    background-color: #6b441e;
+    color: #ffffff;
+    box-shadow: 0 0 12px #ff9900;
+}
+
+/* Посилання "Повернутися на головну" у текстах сторінок */
+.site-main a[href="index.html"] {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #c29b61 !important;
+    text-decoration: underline !important;
+    font-family: 'Playfair Display', serif !important;
+    padding: 0 !important;
+}
+
+.site-main a[href="index.html"]:hover {
+    color: #ffcc66 !important;
+}
+
+
+.content-box a[href="index.html"] {
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+/* Стилі для логотипа з анімованою шестернею */
+.logo a {
+    color: #e6c594 !important;
+    text-decoration: none !important;
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Іконка шестерні із плавним переходом */
+.gear-icon {
+    display: inline-block;
+    font-size: 26px;
+    color: #8c5825;
+    transition: transform 0.8s ease-in-out, color 0.3s;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* ГОЛОВНЕ: при наведенні миші на посилання логотипа шестерня робить оберт на 360 градусів */
+.logo a:hover .gear-icon {
+    transform: rotate(360deg);
+    color: #ffcc66;
+    text-shadow: 0 0 10px #ff9900;
+}
+
+.logo a:hover {
+    color: #ffcc66 !important;
+}
+
+
+/* Контейнер для вирівнювання кнопки та шестерень в один рядок */
+.install-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Відстань між шестернями та кнопкою */
+    margin: 10px 0;
+}
+
+/* Стилі для самієї кнопки встановлення */
+.install-btn {
+    display: inline-block;
+    background-color: #3b2512;
+    color: #e6c594;
+    border: 2px solid #8c5825;
+    padding: 12px 25px;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+
+.install-btn:hover {
+    background-color: #6b441e;
+    color: #ffffff;
+    box-shadow: 0 0 12px #ff9900;
+}
+
+/* Загальні стилі для бокових шестерень біля кнопки */
+.btn-gear {
+    font-size: 24px;
+    color: #8c5825;
+    transition: transform 0.8s ease-in-out, color 0.3s;
+    text-shadow: 1px 1px 2px #000;
+    user-select: none;
+}
+
+/* КОЛИ НАВОДИМО КУРСОР НА КНОПКУ — обидві шестерні починають крутитися та світитися */
+.install-container:hover .btn-gear {
+    color: #ffcc66;
+    text-shadow: 0 0 10px #ff9900;
+}
+
+/* Ліва шестерня крутиться за годинниковою стрілкою */
+.install-container:hover .gear-left {
+    transform: rotate(360deg);
+}
+
+/* Права шестерня крутиться проти годинникової стрілки для ефекту механізму */
+.install-container:hover .gear-right {
+    transform: rotate(-360deg);
+}
+
+
+/* Контейнер центрування */
+.install-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+/* Сама кнопка стає флекс-контейнером, щоб тримати текст і шестерні всередині рамки */
+.install-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* Відстань між шестернями та текстом */
+    background-color: #3b2512;
+    color: #e6c594;
+    border: 2px solid #8c5825;
+    padding: 12px 25px;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+
+.install-btn:hover {
+    background-color: #6b441e;
+    color: #ffffff;
+    box-shadow: 0 0 12px #ff9900;
+}
+
+/* Контейнер центрування */
+.install-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+/* Сама кнопка */
+.install-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #3b2512;
+    color: #e6c594;
+    border: 2px solid #8c5825;
+    padding: 12px 25px;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+
+.install-btn:hover {
+    background-color: #6b441e;
+    color: #ffffff;
+    box-shadow: 0 0 12px #ff9900;
+}
+
+/* Шестерні всередині кнопки */
+.install-btn .btn-gear {
+    display: inline-block;
+    font-size: 20px;
+    color: #8c5825;
+    transition: transform 0.8s ease-in-out, color 0.3s;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Обертання при наведенні на саму кнопку */
+.install-btn:hover .btn-gear {
+    color: #ffcc66;
+    text-shadow: 0 0 8px #ff9900;
+}
+
+.install-btn:hover .gear-left {
+    transform: rotate(360deg);
+}
+
+.install-btn:hover .gear-right {
+    transform: rotate(-360deg);
+}
+
+
+/* Стилізований стімпанк-підвал на головній сторінці */
+.site-footer {
+    background-color: #0c0805;
+    background-image: linear-gradient(to bottom, #140e09, #080503);
+    padding: 60px 0 30px 0;
+    border-top: 3px solid #8c5825;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+}
+
+.site-footer h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+    color: #e6c594;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.footer-container p {
+    font-size: 16px;
+    color: #d4b58b;
+    line-height: 1.6;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row; /* Вибудовує елементи в рядок (у бік) */
+    flex-wrap: wrap; /* Якщо не вистачатиме місця, акуратно перенесеться на новий рядок */
+    justify-content: center;
+    gap: 30px; /* Відстань між адресою, поштою та телефоном */
+    margin: 15px 0;
+    color: #e6c594;
+}
+
+
+/* Контейнер карти у підвалі */
+.footer-map-container {
+    width: 100%;
+    max-width: 700px;
+    height: 300px;
+    border: 4px solid #8c5825;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    margin: 15px auto;
+}
+
+.footer-map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: sepia(30%) contrast(110%) brightness(90%);
+}
+
+.copyright {
+    font-size: 14px;
+    color: #8c6d46;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+
+/* Кнопка прокрутки вгору */
+#scrollTopBtn {
+    display: none; /* Спохована за замовчуванням, поки не почнемо скролити */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    background-color: #3b2512;
+    color: #e6c594;
+    border: 2px solid #8c5825;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+    background-color: #6b441e;
+    color: #ffffff;
+    box-shadow: 0 0 12px #ff9900;
+    transform: translateY(-3px);
+}
+
+/* Галерея зображень на сторінці PhotoApp */
+.photoapp-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.gallery-item {
+    border: 3px solid #8c5825;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    filter: sepia(40%) contrast(110%) brightness(90%); /* Надає фотографіям вінтажного ефекту */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Ефект при наведенні миші на фотографії */
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 153, 0, 0.4);
+    border-color: #ffcc66;
+}
+
+.gallery-item:hover img {
+    filter: sepia(10%) contrast(105%) brightness(100%);
+    transform: scale(1.05);
+}
+
+/* Стиль для посилання повернення */
+.content-box .return-link {
+    color: #e6c594;
+    text-decoration: underline;
+    font-family: 'Cinzel', serif;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.content-box .return-link:hover {
+    color: #ffcc66;
+}
+
+/* Адаптивність для мобільних екранів */
+@media (max-width: 768px) {
+    .photoapp-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Налаштування секції для підтримки фонового відео */
+.features-section {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+/* Контейнер для відео на фоні */
+.video-bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Саме відео */
+.steampunk-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(50%) contrast(120%) brightness(50%);
+}
+
+/* Затемнення поверх відео для читабельності тексту */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 8, 5, 0.85);
+}
+
+/* Піднімаємо контент вище за відео */
+.features-section .features-container {
+    position: relative;
+    z-index: 2;
+}
+
+.features-section {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.video-bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: sepia(50%) contrast(120%) brightness(50%);
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 8, 5, 0.85);
+    z-index: 2;
+}
+
+.features-section .features-container {
+    position: relative;
+    z-index: 3;
+}
+
+/* Головний контейнер футера у два стовпці */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Ліва колонка (текст + блоки адреси і контактів) */
+.footer-info-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-info-col h3 {
+    font-family: 'Cinzel', serif;
+    color: #e6c594;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.footer-desc {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #d1b181;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Обгортка для блоків */
+.footer-blocks-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Стиль окремих блоків */
+.footer-block {
+    background: rgba(59, 37, 18, 0.6); /* колір #3b2512 з прозорістю */
+    border: 1px solid #8c5825; /* мідна рамка */
+    border-radius: 4px;
+    padding: 12px 15px;
+}
+
+.footer-block p {
+    margin: 0;
+    color: #e6c594;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+}
+
+/* Права колонка з картою */
+.footer-map-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-map-container {
+    border: 2px solid #8c5825;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.footer-map-container iframe {
+    filter: sepia(0.6) contrast(1.1);
+    display: block;
+}
+
+/* Нижня смуга */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(140, 88, 37, 0.3);
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.copyright {
+    color: #a88455;
+    font-size: 0.9rem;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-map-col {
+        width: 100%;
+    }
+}
+
+
+
+
+/* Контейнер футера */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Ліва колонка (Контакти) */
+.footer-left-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Права колонка (Адреса + Карта) */
+.footer-right-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Блоки */
+.footer-block {
+    background: rgba(59, 37, 18, 0.6);
+    border: 1px solid #8c5825;
+    border-radius: 4px;
+    padding: 15px 20px;
+}
+
+.footer-block p {
+    margin: 5px 0;
+    color: #e6c594;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+}
+
+/* Контейнер карти */
+.footer-map-container {
+    border: 2px solid #8c5825;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.footer-map-container iframe {
+    filter: sepia(0.6) contrast(1.1);
+    display: block;
+}
+
+/* Мобільна адаптивність */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-left-col, .footer-right-col {
+        width: 100%;
+    }
+}
+
+
+
+
+/* Загальний контейнер футера */
+.footer-container {.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Вирівнювання заголовка та тексту по центру */
+.footer-top-content {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.footer-top-content h3 {
+    font-family: 'Cinzel', serif;
+    color: #e6c594;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.footer-desc {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #d1b181;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+/* Контейнер для трьох колонок */
+.footer-columns-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 25px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Вінтажні блоки (однаковий фон та рамка для всіх трьох колонок) */
+.footer-block {
+    background: rgba(59, 37, 18, 0.6);
+    border: 1px solid #8c5825;
+    border-radius: 4px;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-block h4 {
+    font-family: 'Cinzel', serif;
+    color: #e6c594;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    border-bottom: 1px dashed #8c5825;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.footer-block p {
+    margin: 8px 0;
+    color: #e6c594;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+}
+
+/* Контейнер карти всередині блоку */
+.footer-map-container {
+    border: 1px solid #8c5825;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: auto;
+}
+
+.footer-map-container iframe {
+    filter: sepia(0.6) contrast(1.1);
+    display: block;
+    width: 100%;
+}
+
+/* Нижня смуга */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(140, 88, 37, 0.3);
+    padding-top: 15px;
+    margin-top: 30px;
+}
+
+.copyright {
+    color: #a88455;
+    font-size: 0.9rem;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+/* Адаптивність */
+@media (max-width: 900px) {
+    .footer-columns-3 {
+        flex-direction: column;
+    }
+}

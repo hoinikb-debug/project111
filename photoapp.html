@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Стилі для годинникового роздільника та вінтажних тез */
+        .gear-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0 25px 0;
+            color: #8c5825;
+        }
+        .gear-divider::before,
+        .gear-divider::after {
+            content: "";
+            flex: 1;
+            height: 2px;
+            background-color: #8c5825;
+        }
+        .gear-divider span {
+            font-size: 20px;
+            animation: spinGear 10s linear infinite;
+        }
+        @keyframes spinGear {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Вирівнювання списку місії по центру */
+        .mission-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 550px; /* Центрує весь блок і обмежує ширину */
+            text-align: left;  
+        }
+        .mission-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 16px;
+            color: #d4b58b;
+            line-height: 1.5;
+        }
+        .mission-icon {
+            color: #8c5825;
+            font-size: 18px;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="gear-icon">&#9881;</span> PHOTOAPP
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="photoapp.html">PHOTOAPP</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="download.html">DOWNLOAD</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="content-box">
+                <h1>About PhotoApp</h1>
+                
+                <!-- Годинниковий роздільник із шестернями -->
+                <div class="gear-divider">
+                    <span>&#9881;</span>
+                </div>
+                
+                <p style="margin-bottom: 20px; text-align: center;">
+                    PhotoApp is a modern tool for mobile and desktop devices that helps you create, edit, and share incredible photos with a single click.
+                </p>
+
+                <!-- Вікторіанські тези нашої місії з іконками -->
+                <ul class="mission-list">
+                    <li class="mission-item">
+                        <span class="mission-icon">⚙</span>
+                        <span><strong>Precision Engineering:</strong> Instant processing of images with absolute mechanical accuracy.</span>
+                    </li>
+                    <li class="mission-item">
+                        <span class="mission-icon">⚙</span>
+                        <span><strong>Victorian Aesthetics:</strong> Preservation of original vintage depth, details, and rich colors.</span>
+                    </li>
+                    <li class="mission-item">
+                        <span class="mission-icon">⚙</span>
+                        <span><strong>Universal Accessibility:</strong> Making professional image editing simple and available to everyone.</span>
+                    </li>
+                </ul>
+
+                <a href="index.html" class="return-link" style="display: block; text-align: center; margin-top: 20px; color: #e6c594; text-decoration: underline;">Return to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 PHOTOAPP. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

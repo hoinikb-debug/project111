@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success - PhotoApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gear-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0 25px 0;
+            color: #8c5825;
+        }
+        .gear-divider::before,
+        .gear-divider::after {
+            content: "";
+            flex: 1;
+            height: 2px;
+            background-color: #8c5825;
+        }
+        .gear-divider span {
+            font-size: 20px;
+            animation: spinGear 10s linear infinite;
+        }
+        @keyframes spinGear {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="gear-icon">&#9881;</span> PHOTOAPP
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="photoapp.html">PHOTOAPP</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="download.html">DOWNLOAD</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="content-box">
+                <h1>Thank You for Installing!</h1>
+                
+                <div class="gear-divider">
+                    <span>&#9881;</span>
+                </div>
+                
+                <p style="text-align: center; max-width: 600px; margin: 0 auto 20px auto; line-height: 1.6;">
+                    Your app has been successfully installed. We wish you pleasant usage and incredible photos with PhotoApp!
+                </p>
+
+                <a href="index.html" class="return-link" style="display: block; text-align: center; margin-top: 20px; color: #e6c594; text-decoration: underline;">Return to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 PHOTOAPP. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

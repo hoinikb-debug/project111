@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Us - PhotoApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Стилізація та центрування карти під стімпанк */
+        .map-container {
+            width: 100%;
+            max-width: 700px;
+            height: 350px;
+            border: 4px solid #8c5825;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+            margin: 15px auto; /* Центрує блок мапи за допомогою auto */
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: sepia(30%) contrast(110%) brightness(90%);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="gear-icon">&#9881;</span> PHOTOAPP
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="photoapp.html">PHOTOAPP</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="download.html">DOWNLOAD</a></li>
+                    <li><a href="findus.html">FIND US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="content-box">
+                <h1>Find Us</h1>
+                <p>
+                    Our main mechanical laboratory and headquarters are located in the heart of the steam district. 
+                    Visit us to experience our workshop, inspect our optical lenses, and talk with our engineers.
+                </p>
+                
+                <p style="color: #e6c594; font-weight: bold;">
+                    📍 Address: 22 Steam-Pipe Avenue, Clockwork City, Victorian District.
+                </p>
+
+                <!-- Вбудована карта Google Maps із вінтажним ефектом -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.493645270705!2d30.52166847688534!3d50.4501,27!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50f8b6e3c5%3A0x861346747b0a7c4!2sIndependence%20Maidan!5e0!3m2!1sen!2sua!4v1700000000000!5m2!1sen!2sua" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <a href="index.html" style="color: #c29b61; text-decoration: underline; margin-top: 10px;">Return to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 PHOTOAPP. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
